@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		612474581876D21700C6E963 /* EgisYankeesUrlDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 612474501876D21700C6E963 /* EgisYankeesUrlDB.m */; };
+		612474591876D21700C6E963 /* EgisYankeesXMLDataStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 612474521876D21700C6E963 /* EgisYankeesXMLDataStruct.m */; };
+		6124745A1876D21700C6E963 /* EgisYankeesXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 612474541876D21700C6E963 /* EgisYankeesXMLParser.m */; };
+		6124745B1876D21700C6E963 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 612474571876D21700C6E963 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6124745D1876D22500C6E963 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6124745C1876D22500C6E963 /* libxml2.dylib */; };
+		6124745F1876D27C00C6E963 /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6124745E1876D27C00C6E963 /* sample.xml */; };
+		612474751878248F00C6E963 /* BtPairAndConnectWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 617017D01875478A00084643 /* BtPairAndConnectWindowController.m */; };
+		61247481187827D800C6E963 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 61247478187827D800C6E963 /* NSDate+Helper.m */; };
+		61247482187827D800C6E963 /* NSObject+SharedQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6124747A187827D800C6E963 /* NSObject+SharedQueue.m */; };
+		61247483187827D800C6E963 /* NSOperationQueue+SharedQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6124747C187827D800C6E963 /* NSOperationQueue+SharedQueue.m */; };
+		61247484187827D800C6E963 /* NSThread+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 6124747E187827D800C6E963 /* NSThread+Block.m */; };
+		61247485187827D800C6E963 /* ParseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 61247480187827D800C6E963 /* ParseHelper.m */; };
+		6170177C18753EAC00084643 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6170177B18753EAC00084643 /* Cocoa.framework */; };
+		6170178618753EAC00084643 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6170178418753EAC00084643 /* InfoPlist.strings */; };
+		6170178818753EAC00084643 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6170178718753EAC00084643 /* main.m */; };
+		6170178C18753EAC00084643 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6170178A18753EAC00084643 /* Credits.rtf */; };
+		6170178F18753EAC00084643 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6170178E18753EAC00084643 /* AppDelegate.m */; };
+		6170179218753EAC00084643 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6170179018753EAC00084643 /* MainMenu.xib */; };
+		6170179418753EAC00084643 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6170179318753EAC00084643 /* Images.xcassets */; };
+		6170179B18753EAC00084643 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6170179A18753EAC00084643 /* XCTest.framework */; };
+		6170179C18753EAC00084643 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6170177B18753EAC00084643 /* Cocoa.framework */; };
+		617017A418753EAC00084643 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 617017A218753EAC00084643 /* InfoPlist.strings */; };
+		617017A618753EAC00084643 /* MacBleLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 617017A518753EAC00084643 /* MacBleLibraryTests.m */; };
+		617017C118753FCD00084643 /* BleBTRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 617017B118753FCD00084643 /* BleBTRes.m */; };
+		617017C218753FCD00084643 /* sys_queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 617017BC18753FCD00084643 /* sys_queue.c */; };
+		617017C318753FCD00084643 /* YuKeyBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 617017C018753FCD00084643 /* YuKeyBT.m */; };
+		617017C518753FF100084643 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617017C418753FF100084643 /* IOBluetooth.framework */; };
+		617017CA1875463B00084643 /* GlobalVars.m in Sources */ = {isa = PBXBuildFile; fileRef = 617017C91875463B00084643 /* GlobalVars.m */; };
+		617017D31875478A00084643 /* BtPairAndConnectWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 617017D11875478A00084643 /* BtPairAndConnectWindowController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6170179D18753EAC00084643 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6170177018753EAC00084643 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6170177718753EAC00084643;
+			remoteInfo = MacBleLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6124744F1876D21700C6E963 /* EgisYankeesUrlDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EgisYankeesUrlDB.h; sourceTree = "<group>"; };
+		612474501876D21700C6E963 /* EgisYankeesUrlDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EgisYankeesUrlDB.m; sourceTree = "<group>"; };
+		612474511876D21700C6E963 /* EgisYankeesXMLDataStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EgisYankeesXMLDataStruct.h; sourceTree = "<group>"; };
+		612474521876D21700C6E963 /* EgisYankeesXMLDataStruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EgisYankeesXMLDataStruct.m; sourceTree = "<group>"; };
+		612474531876D21700C6E963 /* EgisYankeesXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EgisYankeesXMLParser.h; sourceTree = "<group>"; };
+		612474541876D21700C6E963 /* EgisYankeesXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EgisYankeesXMLParser.m; sourceTree = "<group>"; };
+		612474561876D21700C6E963 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		612474571876D21700C6E963 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		6124745C1876D22500C6E963 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		6124745E1876D27C00C6E963 /* sample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample.xml; sourceTree = "<group>"; };
+		61247477187827D800C6E963 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		61247478187827D800C6E963 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
+		61247479187827D800C6E963 /* NSObject+SharedQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SharedQueue.h"; sourceTree = "<group>"; };
+		6124747A187827D800C6E963 /* NSObject+SharedQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SharedQueue.m"; sourceTree = "<group>"; };
+		6124747B187827D800C6E963 /* NSOperationQueue+SharedQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperationQueue+SharedQueue.h"; sourceTree = "<group>"; };
+		6124747C187827D800C6E963 /* NSOperationQueue+SharedQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperationQueue+SharedQueue.m"; sourceTree = "<group>"; };
+		6124747D187827D800C6E963 /* NSThread+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+Block.h"; sourceTree = "<group>"; };
+		6124747E187827D800C6E963 /* NSThread+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+Block.m"; sourceTree = "<group>"; };
+		6124747F187827D800C6E963 /* ParseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseHelper.h; sourceTree = "<group>"; };
+		61247480187827D800C6E963 /* ParseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseHelper.m; sourceTree = "<group>"; };
+		6170177818753EAC00084643 /* MacBleLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacBleLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6170177B18753EAC00084643 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6170177E18753EAC00084643 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6170177F18753EAC00084643 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6170178018753EAC00084643 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6170178318753EAC00084643 /* MacBleLibrary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacBleLibrary-Info.plist"; sourceTree = "<group>"; };
+		6170178518753EAC00084643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6170178718753EAC00084643 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6170178918753EAC00084643 /* MacBleLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacBleLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		6170178B18753EAC00084643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		6170178D18753EAC00084643 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6170178E18753EAC00084643 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6170179118753EAC00084643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6170179318753EAC00084643 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6170179918753EAC00084643 /* MacBleLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacBleLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6170179A18753EAC00084643 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		617017A118753EAC00084643 /* MacBleLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacBleLibraryTests-Info.plist"; sourceTree = "<group>"; };
+		617017A318753EAC00084643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		617017A518753EAC00084643 /* MacBleLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacBleLibraryTests.m; sourceTree = "<group>"; };
+		617017B018753FCD00084643 /* BleBTRes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleBTRes.h; sourceTree = "<group>"; };
+		617017B118753FCD00084643 /* BleBTRes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleBTRes.m; sourceTree = "<group>"; };
+		617017B218753FCD00084643 /* CaptureEnrollDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureEnrollDelegate.h; sourceTree = "<group>"; };
+		617017B318753FCD00084643 /* CaptureVerifyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureVerifyDelegate.h; sourceTree = "<group>"; };
+		617017B418753FCD00084643 /* DefStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefStruct.h; sourceTree = "<group>"; };
+		617017B518753FCD00084643 /* DeleteFeatureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteFeatureDelegate.h; sourceTree = "<group>"; };
+		617017B618753FCD00084643 /* ErrorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorDelegate.h; sourceTree = "<group>"; };
+		617017B718753FCD00084643 /* FlashDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashDelegate.h; sourceTree = "<group>"; };
+		617017B818753FCD00084643 /* MSRDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRDelegate.h; sourceTree = "<group>"; };
+		617017B918753FCD00084643 /* ProprietaryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProprietaryService.h; sourceTree = "<group>"; };
+		617017BA18753FCD00084643 /* SCRDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRDelegate.h; sourceTree = "<group>"; };
+		617017BB18753FCD00084643 /* StatusDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusDelegate.h; sourceTree = "<group>"; };
+		617017BC18753FCD00084643 /* sys_queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sys_queue.c; sourceTree = "<group>"; };
+		617017BD18753FCD00084643 /* sys_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sys_queue.h; sourceTree = "<group>"; };
+		617017BE18753FCD00084643 /* VersionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionDelegate.h; sourceTree = "<group>"; };
+		617017BF18753FCD00084643 /* YuKeyBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YuKeyBT.h; sourceTree = "<group>"; };
+		617017C018753FCD00084643 /* YuKeyBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YuKeyBT.m; sourceTree = "<group>"; };
+		617017C418753FF100084643 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		617017C81875463B00084643 /* GlobalVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVars.h; sourceTree = "<group>"; };
+		617017C91875463B00084643 /* GlobalVars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVars.m; sourceTree = "<group>"; };
+		617017CF1875478A00084643 /* BtPairAndConnectWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BtPairAndConnectWindowController.h; sourceTree = "<group>"; };
+		617017D01875478A00084643 /* BtPairAndConnectWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BtPairAndConnectWindowController.m; sourceTree = "<group>"; };
+		617017D11875478A00084643 /* BtPairAndConnectWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BtPairAndConnectWindowController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6170177518753EAC00084643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6124745D1876D22500C6E963 /* libxml2.dylib in Frameworks */,
+				617017C518753FF100084643 /* IOBluetooth.framework in Frameworks */,
+				6170177C18753EAC00084643 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6170179618753EAC00084643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6170179C18753EAC00084643 /* Cocoa.framework in Frameworks */,
+				6170179B18753EAC00084643 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6124744E1876D21700C6E963 /* YankeeXMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				6124744F1876D21700C6E963 /* EgisYankeesUrlDB.h */,
+				612474501876D21700C6E963 /* EgisYankeesUrlDB.m */,
+				612474511876D21700C6E963 /* EgisYankeesXMLDataStruct.h */,
+				612474521876D21700C6E963 /* EgisYankeesXMLDataStruct.m */,
+				612474531876D21700C6E963 /* EgisYankeesXMLParser.h */,
+				612474541876D21700C6E963 /* EgisYankeesXMLParser.m */,
+				612474551876D21700C6E963 /* XMLSupport */,
+			);
+			path = YankeeXMLParser;
+			sourceTree = "<group>";
+		};
+		612474551876D21700C6E963 /* XMLSupport */ = {
+			isa = PBXGroup;
+			children = (
+				612474561876D21700C6E963 /* GDataXMLNode.h */,
+				612474571876D21700C6E963 /* GDataXMLNode.m */,
+			);
+			path = XMLSupport;
+			sourceTree = "<group>";
+		};
+		61247476187827D800C6E963 /* NetAsyncProcUtility */ = {
+			isa = PBXGroup;
+			children = (
+				61247477187827D800C6E963 /* NSDate+Helper.h */,
+				61247478187827D800C6E963 /* NSDate+Helper.m */,
+				61247479187827D800C6E963 /* NSObject+SharedQueue.h */,
+				6124747A187827D800C6E963 /* NSObject+SharedQueue.m */,
+				6124747B187827D800C6E963 /* NSOperationQueue+SharedQueue.h */,
+				6124747C187827D800C6E963 /* NSOperationQueue+SharedQueue.m */,
+				6124747D187827D800C6E963 /* NSThread+Block.h */,
+				6124747E187827D800C6E963 /* NSThread+Block.m */,
+				6124747F187827D800C6E963 /* ParseHelper.h */,
+				61247480187827D800C6E963 /* ParseHelper.m */,
+			);
+			path = NetAsyncProcUtility;
+			sourceTree = "<group>";
+		};
+		6170176F18753EAC00084643 = {
+			isa = PBXGroup;
+			children = (
+				6170178118753EAC00084643 /* MacBleLibrary */,
+				6170179F18753EAC00084643 /* MacBleLibraryTests */,
+				6170177A18753EAC00084643 /* Frameworks */,
+				6170177918753EAC00084643 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6170177918753EAC00084643 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6170177818753EAC00084643 /* MacBleLibrary.app */,
+				6170179918753EAC00084643 /* MacBleLibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6170177A18753EAC00084643 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6124745C1876D22500C6E963 /* libxml2.dylib */,
+				617017C418753FF100084643 /* IOBluetooth.framework */,
+				6170177B18753EAC00084643 /* Cocoa.framework */,
+				6170179A18753EAC00084643 /* XCTest.framework */,
+				6170177D18753EAC00084643 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6170177D18753EAC00084643 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6170177E18753EAC00084643 /* AppKit.framework */,
+				6170177F18753EAC00084643 /* CoreData.framework */,
+				6170178018753EAC00084643 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6170178118753EAC00084643 /* MacBleLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				61247476187827D800C6E963 /* NetAsyncProcUtility */,
+				617017CB1875471C00084643 /* SampleWindows */,
+				617017AF18753FCD00084643 /* BleLibraryOnMac */,
+				6170178D18753EAC00084643 /* AppDelegate.h */,
+				6170178E18753EAC00084643 /* AppDelegate.m */,
+				6170179018753EAC00084643 /* MainMenu.xib */,
+				6170179318753EAC00084643 /* Images.xcassets */,
+				6170178218753EAC00084643 /* Supporting Files */,
+				617017C81875463B00084643 /* GlobalVars.h */,
+				617017C91875463B00084643 /* GlobalVars.m */,
+			);
+			path = MacBleLibrary;
+			sourceTree = "<group>";
+		};
+		6170178218753EAC00084643 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6170178318753EAC00084643 /* MacBleLibrary-Info.plist */,
+				6170178418753EAC00084643 /* InfoPlist.strings */,
+				6170178718753EAC00084643 /* main.m */,
+				6170178918753EAC00084643 /* MacBleLibrary-Prefix.pch */,
+				6170178A18753EAC00084643 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6170179F18753EAC00084643 /* MacBleLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				617017A518753EAC00084643 /* MacBleLibraryTests.m */,
+				617017A018753EAC00084643 /* Supporting Files */,
+			);
+			path = MacBleLibraryTests;
+			sourceTree = "<group>";
+		};
+		617017A018753EAC00084643 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				617017A118753EAC00084643 /* MacBleLibraryTests-Info.plist */,
+				617017A218753EAC00084643 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		617017AF18753FCD00084643 /* BleLibraryOnMac */ = {
+			isa = PBXGroup;
+			children = (
+				617017B018753FCD00084643 /* BleBTRes.h */,
+				617017B118753FCD00084643 /* BleBTRes.m */,
+				617017B218753FCD00084643 /* CaptureEnrollDelegate.h */,
+				617017B318753FCD00084643 /* CaptureVerifyDelegate.h */,
+				617017B418753FCD00084643 /* DefStruct.h */,
+				617017B518753FCD00084643 /* DeleteFeatureDelegate.h */,
+				617017B618753FCD00084643 /* ErrorDelegate.h */,
+				617017B718753FCD00084643 /* FlashDelegate.h */,
+				617017B818753FCD00084643 /* MSRDelegate.h */,
+				617017B918753FCD00084643 /* ProprietaryService.h */,
+				617017BA18753FCD00084643 /* SCRDelegate.h */,
+				617017BB18753FCD00084643 /* StatusDelegate.h */,
+				617017BC18753FCD00084643 /* sys_queue.c */,
+				617017BD18753FCD00084643 /* sys_queue.h */,
+				617017BE18753FCD00084643 /* VersionDelegate.h */,
+				617017BF18753FCD00084643 /* YuKeyBT.h */,
+				617017C018753FCD00084643 /* YuKeyBT.m */,
+			);
+			path = BleLibraryOnMac;
+			sourceTree = "<group>";
+		};
+		617017CB1875471C00084643 /* SampleWindows */ = {
+			isa = PBXGroup;
+			children = (
+				6124745E1876D27C00C6E963 /* sample.xml */,
+				6124744E1876D21700C6E963 /* YankeeXMLParser */,
+				617017CF1875478A00084643 /* BtPairAndConnectWindowController.h */,
+				617017D01875478A00084643 /* BtPairAndConnectWindowController.m */,
+				617017D11875478A00084643 /* BtPairAndConnectWindowController.xib */,
+			);
+			path = SampleWindows;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6170177718753EAC00084643 /* MacBleLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 617017A918753EAC00084643 /* Build configuration list for PBXNativeTarget "MacBleLibrary" */;
+			buildPhases = (
+				6170177418753EAC00084643 /* Sources */,
+				6170177518753EAC00084643 /* Frameworks */,
+				6170177618753EAC00084643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacBleLibrary;
+			productName = MacBleLibrary;
+			productReference = 6170177818753EAC00084643 /* MacBleLibrary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6170179818753EAC00084643 /* MacBleLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 617017AC18753EAC00084643 /* Build configuration list for PBXNativeTarget "MacBleLibraryTests" */;
+			buildPhases = (
+				6170179518753EAC00084643 /* Sources */,
+				6170179618753EAC00084643 /* Frameworks */,
+				6170179718753EAC00084643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6170179E18753EAC00084643 /* PBXTargetDependency */,
+			);
+			name = MacBleLibraryTests;
+			productName = MacBleLibraryTests;
+			productReference = 6170179918753EAC00084643 /* MacBleLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6170177018753EAC00084643 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Milo Chen";
+				TargetAttributes = {
+					6170179818753EAC00084643 = {
+						TestTargetID = 6170177718753EAC00084643;
+					};
+				};
+			};
+			buildConfigurationList = 6170177318753EAC00084643 /* Build configuration list for PBXProject "MacBleLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6170176F18753EAC00084643;
+			productRefGroup = 6170177918753EAC00084643 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6170177718753EAC00084643 /* MacBleLibrary */,
+				6170179818753EAC00084643 /* MacBleLibraryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6170177618753EAC00084643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617017D31875478A00084643 /* BtPairAndConnectWindowController.xib in Resources */,
+				6170178618753EAC00084643 /* InfoPlist.strings in Resources */,
+				6170179418753EAC00084643 /* Images.xcassets in Resources */,
+				6124745F1876D27C00C6E963 /* sample.xml in Resources */,
+				6170178C18753EAC00084643 /* Credits.rtf in Resources */,
+				6170179218753EAC00084643 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6170179718753EAC00084643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617017A418753EAC00084643 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6170177418753EAC00084643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61247481187827D800C6E963 /* NSDate+Helper.m in Sources */,
+				61247484187827D800C6E963 /* NSThread+Block.m in Sources */,
+				612474591876D21700C6E963 /* EgisYankeesXMLDataStruct.m in Sources */,
+				61247485187827D800C6E963 /* ParseHelper.m in Sources */,
+				6170178F18753EAC00084643 /* AppDelegate.m in Sources */,
+				617017C118753FCD00084643 /* BleBTRes.m in Sources */,
+				6124745A1876D21700C6E963 /* EgisYankeesXMLParser.m in Sources */,
+				6170178818753EAC00084643 /* main.m in Sources */,
+				612474751878248F00C6E963 /* BtPairAndConnectWindowController.m in Sources */,
+				617017C318753FCD00084643 /* YuKeyBT.m in Sources */,
+				6124745B1876D21700C6E963 /* GDataXMLNode.m in Sources */,
+				61247482187827D800C6E963 /* NSObject+SharedQueue.m in Sources */,
+				617017CA1875463B00084643 /* GlobalVars.m in Sources */,
+				612474581876D21700C6E963 /* EgisYankeesUrlDB.m in Sources */,
+				617017C218753FCD00084643 /* sys_queue.c in Sources */,
+				61247483187827D800C6E963 /* NSOperationQueue+SharedQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6170179518753EAC00084643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617017A618753EAC00084643 /* MacBleLibraryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6170179E18753EAC00084643 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6170177718753EAC00084643 /* MacBleLibrary */;
+			targetProxy = 6170179D18753EAC00084643 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6170178418753EAC00084643 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6170178518753EAC00084643 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6170178A18753EAC00084643 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6170178B18753EAC00084643 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		6170179018753EAC00084643 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6170179118753EAC00084643 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		617017A218753EAC00084643 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				617017A318753EAC00084643 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		617017A718753EAC00084643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		617017A818753EAC00084643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		617017AA18753EAC00084643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacBleLibrary/MacBleLibrary-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "MacBleLibrary/MacBleLibrary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		617017AB18753EAC00084643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacBleLibrary/MacBleLibrary-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "MacBleLibrary/MacBleLibrary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		617017AD18753EAC00084643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacBleLibrary.app/Contents/MacOS/MacBleLibrary";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacBleLibrary/MacBleLibrary-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MacBleLibraryTests/MacBleLibraryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		617017AE18753EAC00084643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacBleLibrary.app/Contents/MacOS/MacBleLibrary";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacBleLibrary/MacBleLibrary-Prefix.pch";
+				INFOPLIST_FILE = "MacBleLibraryTests/MacBleLibraryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6170177318753EAC00084643 /* Build configuration list for PBXProject "MacBleLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				617017A718753EAC00084643 /* Debug */,
+				617017A818753EAC00084643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		617017A918753EAC00084643 /* Build configuration list for PBXNativeTarget "MacBleLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				617017AA18753EAC00084643 /* Debug */,
+				617017AB18753EAC00084643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		617017AC18753EAC00084643 /* Build configuration list for PBXNativeTarget "MacBleLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				617017AD18753EAC00084643 /* Debug */,
+				617017AE18753EAC00084643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6170177018753EAC00084643 /* Project object */;
+}

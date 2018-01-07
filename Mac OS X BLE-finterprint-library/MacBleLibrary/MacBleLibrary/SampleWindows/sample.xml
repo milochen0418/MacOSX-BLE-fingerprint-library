@@ -1,0 +1,42 @@
+<db userinfo="Enlin">
+    <web title="Facebook"  ver="0"  guid="0" url="https://www.facebook.com/" >
+		<form name="" id="login_form" idx="0">
+			<text id="" name="email" label="$EmailOrTel"/>
+			<password id="" name="pass" label="$Password"/>
+			<submit id="" name="login" label="loginbutton" value="click"/>
+		</form>
+	</web>
+	
+	<web title="Google 帳戶" ver="0" guid="1" url="https://accounts.google.com/ServiceLogin?hl=zh-TW&amp;continue=https://www.google.com">
+	    <form idx="0" id="gaia_loginform" name="">
+	        <email idx="15" id="Email" name="Email" label="$Email"/>
+	        <password idx="19" id="Passwd" name="Passwd" label="$Password"/>
+	        <submit idx="20" id="signIn" name="signIn" label="$Login" value="click"/>
+        </form>
+    </web>    
+
+	<web title="YouTube" ver="0" guid="2" url="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;hl=zh-TW&amp;passive=true&amp;continue=https://www.youtube.com">
+	    <form idx="0" id="gaia_loginform" name="">
+	        <email idx="15" id="Email" name="Email" label="$Email"/>
+	        <password idx="19" id="Passwd" name="Passwd" label="$Password"/>
+	        <submit idx="20" id="signIn" name="signIn" label="$Login" value="click"/>
+	    </form>
+    </web>
+    	
+	<web title="Sign in to Yahoo" ver="0" guid="3" url="https://mlogin.yahoo.com/w/login/user?_done=http://tw.mobi.yahoo.com">
+		<form idx="0" id="mlogin-form" name="login_form">
+		    <text idx="29" id="yid" name="id" label="$Email"/>
+		    <password idx="30" id="passwd" name="password" label="$Password"/>
+   		    <submit idx="40" id="signin_btn" name="" value="click"/>
+		</form>
+	</web>
+	 
+	<web url="http://www.gmail.com" title="Gmail" guid="4" ver="1">
+		<form name="" id="gaia_loginform" idx="0">
+			<email id="Email" name="Email" idx="9" />
+			<password id="Passwd" name="Passwd" idx="10" />
+			<submit id="signIn" name="signIn" idx="11" label="登入" value="click"/>
+		</form>
+	</web>
+    	
+</db>	
